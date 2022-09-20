@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Joke Generator</title>
+  <style>
+    html, body {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.mainHeading{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(75, 176, 255);
+    padding: 20px 0;
+}
+
+.jokeBtn{
+    color: white;
+    padding: 10px 15px;
+    border: 0px;
+    background-color: rgb(82, 180, 255);
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jokeBtn:hover{
+    background-color: rgb(58, 132, 188);
+    scale: 1.1;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.mainCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.jokeCont{
+    max-width: 800px;
+    padding: 40px 10px;
+}
+
+.jokeText{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+  .mainHeading, .text{
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="mainCont">
+    <h1 class="mainHeading">Random Joke Generator</h1>
+    <p class="text">Click the button below to generate a random joke.</p>
+    <button class="jokeBtn">Click here</button>
+    <div class="jokeCont">
+      <p class="jokeText"></p>
+    </div>
+  </div>
+  <script src="JS/joke-exercise.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
